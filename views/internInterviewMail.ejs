@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (max-width:900px){
+         .mainDiv{
+             width: 80%!important;
+             padding: 4%!important;
+         }
+      }
+   </style>
+  </head>
+
+  <body style="margin: 0;padding: 0;box-sizing: border-box;">
+    <div
+      style="display: flex; align-items: center; height: 100vh; width: 100%;background-color: rgb(243, 241, 241);"
+    >
+      <div class="mainDiv"
+        style="width: 45%;border-top: 5px solid #3DC0DF; margin: auto; padding: 2%;background-color: white;border-radius: 20px;"
+      >
+        <div style="font-size: 17px;">
+          <h1 style="text-align: center;">INTERVIEW</h1>
+          <h2 style="padding-top: 5%;padding-bottom: 3%;">Interview - <%= content.userName %> with <%= content.companyName %></h2>
+          <div style="line-height: 25px">
+            <p>Hello <%= content.userName %>,</p>
+            <p>
+              We are excited about your interview at <%= content.companyName %>.
+            </p>
+            <p>
+              Your google meet interview is scheduled from 3:00 PM IST to 4:00
+              PM IST on March 12, 2023.
+            </p>
+            <p>
+              Download google Meet application and log in, please create a free
+              account if you are not on google Meet.
+            </p>
+          </div>
+          <div style="padding-bottom: 2%;padding-top: 2%;">
+            <p>In case of any queries, please contact:</p>
+            <p>Phone : 9879685817</p>
+            <p>Email : kritta.5876@gmail.com</p>
+          </div>
+          <div>
+            <p>Regards,</p>
+            <p>Kritta Patel from <%= content.companyName %></p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

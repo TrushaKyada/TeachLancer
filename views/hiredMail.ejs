@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (max-width: 900px) {
+        .mainDiv {
+          width: 80% !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <div style="display: flex; align-items: center; height: 100vh; width: 100%;background-color: rgb(243, 241, 241);">
+      <div
+        class="mainDiv"
+        style="
+          width: 45%;
+          border-top: 5px solid #3dc0df;
+          margin: auto;
+          padding: 2%;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+          border-radius: 15px;
+          background-color: white;
+        "
+      >
+        <div style="font-size: 17px">
+          <h1 style="text-align: center">HIRED</h1>
+          <div style="line-height: 25px">
+            <h3>Dear <%= content.userName %>,</h3>
+            <p>
+              You have been hired by <%= content.companyName %> so We are all
+              really excited to welcome you to our team!
+            </p>
+            <p>
+              At <%= content.companyName %>, we care about giving our employees
+              everything they need to perform their best. As you will soon see,
+              we have prepared your workstation with all necessary equipment.
+              Our team will help you setup your computer, software and online
+              accounts on your first day.
+            </p>
+            <p>
+              We’ve planned your first days to help you settle in properly. You
+              can find more details in the enclosed agenda. As you will see,
+              you’ll have plenty of time to read and complete your employment
+              paperwork (HR will be there to help you during this process!) You
+              will also meet with your hiring manager to discuss your first
+              steps. For your first week, we have also planned a few training
+              sessions to give you a better understanding of our company and
+              operations.
+            </p>
+          </div>
+          <div style="padding-bottom: 2%; padding-top: 2%">
+            <p>
+              Our team is excited to meet you and look forward to introducing
+              themselves to you during [planned event/ lunchtime].
+            </p>
+            <p>
+              If you have any questions prior to your arrival, please feel free
+              to email or call me and I’ll be more than happy to help you.
+            </p>
+            <p>
+              We are looking forward to working with you and seeing you achieve
+              great things!
+            </p>
+          </div>
+          <div>
+            <p>Regards,</p>
+            <p>Kritta Patel from <%= content.companyName %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

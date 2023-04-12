@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @media (max-width:1500px){
+           .mainDiv{
+               width: 45%!important;
+               padding: 4%!important;
+           }
+        }
+        @media (max-width:900px){
+           .mainDiv{
+               width: 60%!important;
+               padding: 4%!important;
+           }
+        }
+     </style>
+  </head>
+  <body style="margin: 0;padding: 0;box-sizing: border-box;">
+    <div
+      style="display: flex; align-items: center; height: 100vh; width: 100%;background-color: rgb(243, 241, 241);"
+    >
+      <div class="mainDiv"
+        style="width: 30%;border-top: 5px solid #3DC0DF; margin: auto; padding: 2%;background-color: white;border-radius: 20px;"
+      >
+        <div style="font-size: 17px;">
+          <h1 style="text-align: center;">You have requested to reset your password</h1>
+          <div style="padding-left: 30%;padding-right: 30%;"><hr/></div>
+          <div style="line-height: 25px; padding-top: 2%;">
+            <p style="text-align: center;font-size: 17px;">We cannot simply send you your old password. A unique link to reset your password has been generated for you. To reset your password, click the following link and follow the instructions.</p>
+          </div>
+          <div style="padding-bottom: 2%;padding-top: 2%;text-align: center;">
+           <a href="http://192.168.29.188:3000/reset-password/<%= content.token %>/<%= content.role %>"><button style="background-color: #3DC0DF;padding: 15px 45px;border: none;border-radius: 20px;">Reset Password</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

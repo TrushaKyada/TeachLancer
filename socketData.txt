@@ -1,0 +1,27 @@
+----- joinRoom -----
+{
+    "user_id" : "6364b8acabc1cc4cea73f272"
+}
+
+----- chat -----
+{
+    "sender_id": "6364a87015de0b2ca332a7f8",
+    "receiver_id": "6364b8acabc1cc4cea73f272",
+    "message": "VERY GOOD MORNING!"
+}
+emit : chatReceive
+
+----- readUnread -----
+{
+    "chat_room_id": "640ef78597bfb4faf3ced885",
+    "receiver_id": "6364b8acabc1cc4cea73f272"   // sender user
+}
+emit : readChat
+
+----- groupChat -----
+{
+    "group_id": "640ef78597bfb4faf3ced885",
+    "sender_id": "6364b8acabc1cc4cea73f272",
+    "message": "hello.."
+}
+emit : groupChatMessage
